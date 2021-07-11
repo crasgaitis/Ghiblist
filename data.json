@@ -1,0 +1,114 @@
+[
+	{
+		"commonName": "No-Face",
+		"links": "https://ghibli.fandom.com/wiki/No-Face",
+		"images": "https://vignette.wikia.nocookie.net/79e4f646-c685-4c69-8ace-d45f7805253a/scale-to-width-down/1200",
+		"info": "Hey, boss! It's me! I'm hungry!",
+		"conservationStatus": "Spirited Away"
+	},
+	{
+		"commonName": "Kamajī",
+		"links": "https://ghibli.fandom.com/wiki/Kamaj%C4%AB",
+		"images": "https://pbs.twimg.com/media/DUu5jBuWkAA-0Ah.jpg",
+		"info": "Don’t you see? It’s called love.",
+		"conservationStatus": "Spirited Away"
+	},
+	{
+		"commonName": "Stink Spirit",
+		"links": "https://ghibli.fandom.com/wiki/Stink_Spirit",
+		"images": "https://nedmusgrovespiritedaway.files.wordpress.com/2016/03/riverspiritfilth.png",
+		"info": "*yuck*",
+		"conservationStatus": "Spirited Away"
+	},
+	{
+		"commonName": "Yubaba",
+		"links": "https://ghibli.fandom.com/wiki/Yubaba",
+		"images": "https://media.comicbook.com/2019/09/yubaba-1186194-1280x0.jpeg",
+		"info": "You humans always make a mess of things. Like your parents who gobbled up the food of the spirits like pigs.",
+		"conservationStatus": "Spirited Away"
+	},
+	{
+		"commonName": "Chihiro Ogino",
+		"links": "https://ghibli.fandom.com/wiki/Chihiro_Ogino",
+		"images": "https://media.comicbook.com/2016/11/chihiro-ogino-spirited-away-213928-1280x0.jpg",
+		"info": "I’m not leaving until you give me a job!",
+		"conservationStatus": "Spirited Away"
+	},
+	{
+		"commonName": "Totoro",
+		"links": "https://ghibli.fandom.com/wiki/Totoro",
+		"images": "https://media.discordapp.net/attachments/844417162785456128/863667170550611988/unknown.png",
+		"info": "*fluffy*",		
+		"conservationStatus": "My Neighbor Totoro"
+	},
+	{
+		"commonName": "Mei Kusakabe",
+		"links": "https://ghibli.fandom.com/wiki/Mei_Kusakabe",
+		"images": "https://ghibli-shop.com/wp-content/uploads/2021/01/unnamed-file-33.png",
+		"info": "Do you like spirits, mommy? Even fuzzy ones?",		
+		"conservationStatus": "My Neighbor Totoro"
+	},
+	{
+		"commonName": "Satsuki Kusakabe",
+		"links": "https://ghibli.fandom.com/wiki/Satsuki_Kusakabe",
+		"images": "https://media.discordapp.net/attachments/844417162785456128/863669484945276938/unknown.png",
+		"info": "I hate boys! But I love Nanny’s food better than anything else in the whole wide world.",
+		"conservationStatus": "My Neighbor Totoro"
+	},
+		{
+		"commonName": "Catbus",
+		"links": "https://ghibli.fandom.com/wiki/Catbus",
+		"images": "http://www.johnnytimes.com/wp-content/uploads/2016/11/totoro-catbus-nekobasu-1024x574.jpg",
+		"info": "*vroom vroom*",
+		"conservationStatus": "My Neighbor Totoro"
+	},
+	{
+		"commonName": "Ponyo",
+		"links": "https://ponyo.fandom.com/wiki/Ponyo",
+		"images": "https://www.silverpetticoatreview.com/wp-content/uploads/2019/03/ponyo-1.jpg",
+		"info": "Ponyo wants ham!",
+		"conservationStatus": "Ponyo"
+	},
+	{
+		"commonName": "Sōsuke",
+		"links": "https://ponyo.fandom.com/wiki/S%C5%8Dsuke",
+		"images": "https://media.discordapp.net/attachments/844417162785456128/863674849954889738/unknown.png?width=1204&height=1033",
+		"info": "Mom! Ponyo came back, and she's a little girl now!",
+		"conservationStatus": "Ponyo"
+	},
+	{
+		"commonName": "Granmamare",
+		"links": "https://ponyo.fandom.com/wiki/Granmamare",
+		"images": "https://media.discordapp.net/attachments/844417162785456128/863675494595821568/unknown.png?width=1560&height=1034",
+		"info": "Listen, my darling, why don't we let Ponyo become human for good?",
+		"conservationStatus": "Ponyo"
+	},
+	{
+		"commonName": "Lisa",
+		"links": "https://ponyo.fandom.com/wiki/Lisa",
+		"images": "https://data.whicdn.com/images/343544132/original.jpg",
+		"info": "You'll do the right thing. I know it. You're only five, but you're very smart.",
+		"conservationStatus": "Ponyo"
+	},
+	{
+		"commonName": "Fujimoto",
+		"links": "https://ponyo.fandom.com/wiki/Fujimoto",
+		"images": "https://media.discordapp.net/attachments/844417162785456128/863677117464444948/unknown.png",
+		"info": "Respect your father!",
+		"conservationStatus": "Ponyo"
+	},
+	{
+		"commonName": "Susuwatari",
+		"links": "https://ghibli.fandom.com/wiki/Susuwatari",
+		"images": "https://64.media.tumblr.com/98f0043a986562ff614ff962a0c0f3c2/tumblr_n2xdp1gBVW1rcb0d2o1_1280.jpg",
+		"info": "*soot sprites*",
+		"conservationStatus": "Spirited Away"
+	},
+	{
+		"commonName": "Tatsuo Kusakabe",
+		"links": "https://ghibli.fandom.com/wiki/Tatsuo_Kusakabe",
+		"images": "https://64.media.tumblr.com/228c05b6915e0883f494af235cd09287/067048bc3cdad9ae-9d/s640x960/5f7b7ee5a27aa924350da8fe21fd756db3cf4452.png",
+		"info": "Everybody, try laughing. Then whatever scares you will go away!",
+		"conservationStatus": "My Neighbor Totoro"
+	}
+]

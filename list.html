@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+		<style>
+			* {
+				box-sizing: border-box;
+				cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' style='fill:black;font-size:24px;'><text y='50%'>🌸</text></svg>") 16 0, auto;
+			}
+
+			body {
+				display: grid;
+				grid-template-areas: 'n n'
+					'h h'
+					'a m'
+					'f f';
+				grid-template-rows: 50px 200px auto 50px;
+				grid-template-columns: 300px auto;
+				width: 100vw;
+				height: 100vh;
+				overflow-x: hidden;
+				overflow-y: auto;
+				margin: 0;
+				font-family: 'Otomanopee One', sans-serif;
+				color: #232323;
+				background-image: url('https://wisefish99.qoom.space/Ghiblist/forest2.png');
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+			}
+
+			nav {
+				grid-area: n;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				padding: 0 80px;
+			}
+
+			nav a {
+				display: block;
+				padding: 0 20px;
+				color: #232323;
+				text-decoration: none;
+			}
+
+			header {
+				grid-area: h;
+				width: 100%;
+				height: 100%;
+				position: relative;
+				background-color: #E7D192;
+				opacity: 0.8;
+			}
+
+
+			header h1 {
+				position: absolute;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: 0;
+				padding: 0;
+			}
+
+			header h1 span {
+				color: #143F19;
+				font-size: 48px;
+				text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3);
+				text-align: center;
+			}
+
+			aside {
+				grid-area: a;
+				display: flex;
+				flex-direction: column;
+				margin: 40px 0;
+				padding: 0 40px;
+			}
+
+			aside h3 {
+				text-transform: uppercase;
+				font-weight: 400;
+			}
+
+			aside section {
+				display: grid;
+				grid-template-columns: 40px auto;
+				align-items: center;
+			}
+
+			aside section input {
+				display: block;
+				transform: scale(1.5);
+			}
+
+			aside section label {
+				color: #8C783E;
+				font-weight: 300;
+				line-height: 2;
+			}
+
+			main {
+				grid-area: m;
+				margin: 40px 0;
+				padding: 0 40px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-wrap: wrap;
+			}
+
+			main div {
+				width: 340px;
+				height: 500px;
+				overflow: hidden;
+				background-color: #F4F6F7;
+				margin: 20px;
+			}
+
+			main div img {
+				width: 100%;
+				height: 50%;
+				object-fit: cover;
+				object-position: 50% 50%;
+			}
+
+			main div h3 {
+				padding: 0;
+				margin: 16px;
+				font-weight: 600;
+			}
+
+			main div h4 {
+				padding: 0;
+				margin: 16px;
+				font-weight: 200;
+				color: darkgreen;
+				line-height: 1.5;
+			}
+
+			main div p {
+				padding: 0;
+				margin: 16px;
+				font-weight: 100;
+				color: #82B888;
+				line-height: 1.5;
+				font-size: 15px;
+			}
+
+
+
+			main div a {
+				display: block;
+				padding: 0;
+				margin: 16px;
+				font-weight: 100;
+				font-size: 12px;
+				color: #000000;
+				line-height: 1.5;
+			}
+
+			footer {
+				grid-area: f;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-top: 1px solid #f4f6f7;
+				color: #696969;
+				font-size: 14px;
+			}
+		</style>
+		<style>
+			@media only screen and (max-width: 760px) {
+				body {
+					grid-template-areas: 'n'
+						'h'
+						'a'
+						'm'
+						'f';
+					grid-template-rows: 50px 240px auto auto 50px;
+					grid-template-columns: auto;
+				}
+
+				nav {
+					padding: 0 20px;
+				}
+
+				header h1 span {
+					font-size: 32px;
+					text-align: center;
+				}
+
+				aside {
+					margin: 20px 0;
+					padding: 0 20px;
+				}
+
+				aside section {
+					grid-template-columns: 30px 1fr 30px 1fr;
+				}
+
+				main {
+					margin: 20px 0;
+					padding: 0;
+				}
+
+				main div {
+					width: 100%;
+					height: 300px;
+				}
+			}
+		</style>
+		<script type='module'>
+			const $main = document.querySelector('main'),
+				$sortInputs = document.querySelectorAll('input[name=sort]'),
+				$riskInputs = document.querySelectorAll('input[name=risk]');
+
+			let data;
+
+			function bindItem(item) {
+				const div = document.createElement('div');
+				const card = `
+					<img src='${item.images}'>
+					<h3>${item.commonName}</h3>
+					<h4>${item.conservationStatus}</h4>
+					<p>${item.info}</p>
+					<a href='${item.links}'>More details</a>`;
+
+				div.innerHTML = card;
+				$main.appendChild(div);
+			}
+
+			function sort(e) {
+				if (this.value === 'up') {
+					data.sort((a, b) => a.commonName > b.commonName ? -1 : 1);
+				} else {
+					data.sort((a, b) => a.commonName > b.commonName ? 1 : -1);
+				}
+
+				bindData(data)
+			}
+
+			function filter(e) {
+				let filteredData;
+				if (this.value === 'all') {
+					filteredData = data;
+				} else {
+					filteredData = data.filter(item => item.conservationStatus === this.value)
+				}
+				bindData(filteredData);
+			}
+
+			function bindData(data) {
+				$main.innerHTML = '';
+				data.forEach(bindItem);
+			}
+
+			async function fetchData() {
+				const response = await fetch('data.json'),
+					json = await response.json();
+				data = json;
+				bindData(data)
+			}
+
+			$sortInputs.forEach(input => input.addEventListener('click', sort));
+			$riskInputs.forEach(input => input.addEventListener('click', filter));
+			fetchData();
+		</script>
+	</head>
+
+	<body>
+		<nav>
+			<a href='https://wisefish99.qoom.space/~/Ghiblist/index'>Ghiblist</a>
+		</nav>
+		<header>
+			<h1>
+				<span>Studio Ghibli Characters</span>
+			</h1>
+		</header>
+		<aside>
+			<h3>Sort</h3>
+			<section>
+				<input type='radio' name='sort' value='down' checked>
+				<label>Name: A to Z</label>
+				<input type='radio' name='sort' value='up'>
+				<label>Name: Z to A</label>
+			</section>
+			<h3>Film</h3>
+			<section>
+				<input type='radio' name='risk' value='all' checked>
+				<label>ALL</label>
+				<input type='radio' name='risk' value='Spirited Away'>
+				<label>Spirited Away</label>
+				<input type='radio' name='risk' value='My Neighbor Totoro'>
+				<label>My Neighbor Totoro</label>
+				<input type='radio' name='risk' value='Ponyo'>
+				<label>Ponyo</label>
+			</section>
+		</aside>
+		<main>
+
+		</main>
+		<footer>
+			<div>More films and characters coming soon! </div>
+		</footer>
+	</body>
+
+</html>
